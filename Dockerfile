@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # 暴露 FastAPI 端口
-EXPOSE 8000
+EXPOSE 8080
 
 # 🌟 生产环境启动：绑定 0.0.0.0
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
